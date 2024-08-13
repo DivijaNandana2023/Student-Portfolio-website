@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="portstylesheet.css">
+    <script src="https://kit.fontawesome.com/5c1edb5f42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav> 
+             <div class="left">Divija Nandana's Portfolio</div>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <h3>Hi! Myself</h3>
+                <h1>D.DIVIJA NANDANA</h1>
+                <h3>And I'm Frontend Devoloper</h3>
+                
+        </div>
+        
+    </div>
+</div>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://thumbs.dreamstime.com/z/smiling-girl-student-textbooks-portfolio-13596533.jpg" style="height: 450px;">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! My name is Divija Nandana, and I am a passionate Computer Science Engineering student at SRM-AP. I developed a fascination for technology and problem-solving, which naturally led me to pursue a career in computer science.As a dedicated student, I am passionate about the latest technologies. Eager to learn and grow, I embrace challenges and approach them with curiosity.
+                </p>
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certificates')">certificates</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Data structures</li>
+                        <li>Python</li>
+                        <li>C and C++ Programming languages</li>
+                        <li>Oops using C++</li>
+                        <li>HTML, CSS and javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-current</span><br>SRM University-AP</li>
+                        <li><span>2020-2022</span><br>Intermediate, RESONANCE kota Junior college,
+                        percentage-97.4%</li>
+                        <li><span>2019-2020</span><br>SSC, SRI CHAITANYA OLYMPIAD SCHOOL,
+                        GPA-10</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificates">
+                    <ul>
+                        <li>NPTEL Certificate in "The joy of computing using python"</li>
+                        <li>NPTEL Certificate in "Short Fiction in Indian literature"</li>
+                        <li>NPTEL Certificate in "Education for sustainable development</li>
+                        
+                    </ul>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>TIC TAC TOE</h2>
+                <p>Using python
+                    September 2023 – October 2023
+                    •This program allows usersto play the classic game of Tic
+                    Tac Toe against each other or against a computer
+                    opponent.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2> BILLING SYSTEM</h2>
+                <p>Using c language
+                    January 2023 – February 2023
+                    •This program manages and generate billsfor products. It
+                    include featuressuch asitemized billing, calculation of
+                    total costs, and possibly inventory management.
+                    </p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Snake and ladder game</h2>
+                <p>This project helped me to learn about python
+                    programming skills and its applications
+                    </p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>divijanandanadavire@gmail.com</p>
+                
+                <p><i class="fas fa-phone-square-alt"></i>9494733835</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </div>
+                
+            </div>
+            <div  class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>   
+</body>
+</html>
